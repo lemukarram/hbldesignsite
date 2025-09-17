@@ -1,0 +1,490 @@
+/* Global */
+:root {
+  --orange: #ef7c22; /* RGB(239, 124, 34) */
+  --blue: #17274f;   /* RGB(23, 39, 79) */
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0)), url('images/LandscapeOwner2.jpg') center/cover no-repeat;
+  min-height: 90vh;
+  padding: 0 15px;
+}
+
+.hero h1, .hero p {
+  color: #fff;
+}
+
+.hero h1 {
+  line-height: 1;
+}
+
+section .btn.orange {
+  font-size: 1.4rem;
+  padding: 5px 40px;
+  background-color: var(--orange);
+  border: none;
+  border-radius: 0;
+  color: #ffffff;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.hero .container {
+  margin-bottom: 40px;
+}
+
+/* Sections */
+section {
+  max-width: 1400px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+/* Pricing */
+#pricing h3 {
+  color: #007bff;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+}
+
+.hero-text {
+  max-width: 38%;
+}
+
+img.logo {
+  max-width: 350px;
+  text-align: left;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.just-bold {
+  font-weight: 800 !important;
+}
+
+h2.orange {
+  color: var(--orange);
+}
+
+h2.space-2 {
+  letter-spacing: 2px;
+}
+
+h2.tagline-heading {
+  text-align: center;
+  padding: 15px 5px;
+  text-transform: uppercase;
+  color: #828ca1;
+}
+
+.blue-session {
+  background-color: var(--blue);
+  position: relative;
+}
+
+.blue-session::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -14px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid var(--blue);
+}
+.orange-padding-video{
+  padding:6%;
+  background-color: var(--orange);
+  position: relative;
+}
+.blue-session img.img-fluid {
+  box-shadow: 15px 15px 2px 2px rgba(0,0,0,0.15);
+-webkit-box-shadow: 15px 15px 2px 2px rgba(0,0,0,0.15);
+-moz-box-shadow: 15px 15px 2px 2px rgba(0,0,0,0.15);
+  
+}
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    color: white;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.orange-padding-video:hover .play-button {
+    opacity: 1;
+    font-size: 5.5rem;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+
+
+.onboarding-img {
+  max-width: 100%;
+  max-height: 275px;
+  margin-bottom: 30px;
+}
+
+.orange-session {
+  background-color: var(--orange);
+}
+
+.orange-session img {
+  max-width: 100%;
+}
+
+.orange-session .row > div {
+  margin-top: 0;
+}
+
+ul.text-left {
+  text-align: left;
+  padding: 0 4rem;
+}
+
+.price-session .container {
+  padding: 20px;
+  border: 1px solid var(--orange);
+  padding-bottom: 32px;
+}
+
+.price-session h3 {
+  font-size: 1.3rem;
+  color: var(--blue);
+}
+
+.price-session .text-right {
+  text-align: right;
+}
+
+.price-session .border-left {
+  border-left: 1px solid var(--orange);
+}
+
+.price-session .padding-left-0 {
+  padding-left: 0;
+}
+
+.price-session .padding-right-30 {
+  padding-right: 30px;
+}
+
+.price-session .currency-sign {
+  font-size: 3rem;
+  font-weight: 800;
+  vertical-align: top;
+  line-height: 6rem;
+  color: var(--blue);
+}
+
+.price-session .price {
+  font-size: 5rem;
+  font-weight: 800;
+  color: var(--blue);
+}
+
+.price-session .btn.orange {
+  vertical-align: top;
+  margin-top: 44px;
+  padding: 3px 12px;
+}
+
+.price-session .price-text {
+  display: block;
+  margin-top: -30px;
+  color: #bbbbbb;
+}
+
+.price-session .btn.buy-now {
+  background: none !important;
+  border: 2px solid var(--orange) !important;
+  color: var(--blue) !important;
+  padding: 8px 50px !important;
+}
+
+.price-session .container {
+  position: relative;
+}
+img.footer-logo {
+  max-width: 400px;
+  margin: auto;
+}
+.footer-red-text {
+  color: #d73e27;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.footer-site-link a {
+  font-weight: 600;
+  font-size: 3rem;
+  color: #000000;
+}
+
+/* Outer triangle (border) */
+.price-session .container::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -16px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 16px solid var(--orange);
+}
+
+/* Inner triangle (fill) */
+.price-session .container::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -14px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #ffffff;
+}
+
+.footer .text-right {
+  text-align: right;
+}
+
+.footer .row span a {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #ffbf97;
+  line-height: 6rem;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.margin-bottom {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+  .hero {
+    min-height: 75vh;
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url('images/LandscapeOwner2.jpg') center/cover no-repeat;
+  }
+  
+  .hero-text {
+    max-width: 70%;
+  }
+  
+  img.logo {
+    max-width: 235px;
+  }
+  
+  .onboarding-img {
+    margin-bottom: 0;
+  }
+  
+  
+  ul.text-left {
+    padding: 0 2rem;
+  }
+  
+  .price-session .border-left {
+    border-left: 0;
+  }
+  
+  .price-session .container {
+    padding: 15px;
+    margin: auto 5%;
+    width: 90%;
+  }
+  
+  .price-session .currency-sign {
+    line-height: 5rem;
+  }
+  
+  .price-session .price {
+    font-size: 4rem;
+  }
+  
+  .price-session .btn.orange {
+    padding: 2px 8px;
+    font-size: 1.1rem;
+    margin-top: 35px;
+  }
+  
+  .price-session .btn.buy-now {
+    font-size: 1.5rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .price-session .price-text {
+    margin-top: -22px;
+    text-align: center;
+  }
+  
+  .mobile-hide {
+    display: none;
+  }
+  
+  .footer div.col-md-5, .footer div.col-md-2 {
+    text-align: center;
+  }
+  
+  .footer div.col-md-2 img {
+    max-width: 150px;
+  }
+  .play-button {
+      font-size: 3.5rem;
+  }
+  
+  .orange-padding-video:hover .play-button {
+      font-size: 4rem;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .hero {
+    min-height: 70vh;
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url('images/LandscapeOwner2.jpg') center/cover no-repeat;
+  }
+  
+  .hero-text {
+    max-width: 40%;
+  }
+  
+  .align-img-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  ul.text-left {
+    padding: 0 3rem 0 4rem;
+  }
+  
+  .price-session .currency-sign {
+    line-height: 6rem;
+  }
+  
+  .price-session .price {
+    font-size: 5rem;
+  }
+  
+  .price-session .btn.orange {
+    padding: 2px 10px;
+    font-size: 1.3rem;
+    margin-top: 45px;
+    margin-left: 5px;
+  }
+  
+  .price-session .btn.buy-now {
+    font-size: 1.8rem;
+    margin-top: 35px;
+  }
+  
+  .price-session .price-text {
+    margin-top: -20px;
+  }
+  
+  .price-session .col-md-5 {
+    border-left: none;
+  }
+  
+  .mobile-hide {
+    display: none;
+  }
+  
+  .footer .row span a {
+    line-height: 4rem;
+  }
+}
+
+section a.btn:hover, section a.btn:active, .price-session .btn.buy-now:hover{
+  
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.52);
+-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.52);
+-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.52);
+}
+section a.btn:hover, section a.btn:active{
+  color: #efefef;
+}
+
+section.business-management h2 {
+  font-size: 2rem;
+  color: var(--blue);
+  font-weight: bold;
+  text-transform: none;
+}
+section.business-management span {
+  color: var(--orange);
+}
+section.business-management p {
+  
+  text-align: center;
+  padding: 0 5%;
+}
+
+.modal-content {
+    border-radius: 16px;
+    overflow: hidden;
+    border: none;
+}
+
+.modal-header {
+    background: var(--orange);
+    border-bottom: none;
+    padding: 2px 20px;
+}
+
+.btn-close {
+    filter: invert(1);
+    opacity: 0.8;
+}
+
+.modal-body {
+    padding: 0;
+    background: #000;
+}
+
+.modal-video {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+}
+
+@media (min-width: 992px) {
+    .modal-lg, .modal-xl {
+        --bs-modal-width: 95%;
+    }
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 95%;
+    }
+}
